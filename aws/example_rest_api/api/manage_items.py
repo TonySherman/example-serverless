@@ -1,9 +1,12 @@
 from aws_lambda_powertools import Logger
-from aws_lambda_powertools.event_handler import ApiGatewayResolver, Response
+from aws_lambda_powertools.event_handler import (
+	LambdaFunctionUrlResolver,
+	Response,
+)
 
 from aws.example_rest_api.models.item import Item
 
-app = ApiGatewayResolver(enable_validation=True)
+app = LambdaFunctionUrlResolver(enable_validation=True)
 logger = Logger()
 
 

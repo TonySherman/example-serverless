@@ -11,3 +11,6 @@ python_requirements(
     },
 )
 
+python_sources(
+    name="0",
+)

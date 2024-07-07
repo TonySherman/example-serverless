@@ -8,6 +8,8 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "ruff",
+    "aws-cdk-lib",
+    "constructs",
 ]
 test = [
     "pytest",
